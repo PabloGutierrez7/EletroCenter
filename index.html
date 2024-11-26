@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Template Tab</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/detalhes.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+    
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <!--pasta remixicon-->
+    <link rel="stylesheet" href="css/remixicon/remixicon.css">
+
+
+
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+
+            <!-- TAB BAR-->
+            <div id="menuPrincipal"  class="toolbar toolbar-bottom">
+                <div class="toolbar-inner display-flex">
+                    <a href="/index/" class="tab-link link active">
+                        <i class="ri-home-5-line"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="#" class="tab-link link">
+                        <i class="ri-search-line"></i>
+                        <span>Busca</span>
+                    </a>
+                    <a href="#" class="tab-link link">
+                        <i class="ri-heart-3-line"></i>
+                        <span>Favoritos</span>
+                    </a>
+                    <a href="#" class="tab-link link">
+                        <i class="ri-user-line"></i>
+                        <span>Usuário</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page color-theme-blue">
+
+                <!-- navtopo -->
+               <div class="top-nav">
+                <img class="img-logo" src="img/Design_sem_nome-removebg-preview.png" alt="">
+                <a href="/carrinho/" class="btn-cart" data-count="0">
+                    <i class="ri-shopping-bag-3-line"></i>
+
+                </a>
+               </div>
+
+               <form>
+                <input id="search" type="text" placeholder="oque voce procura">
+                <i class="icone-busca ri-search-line"></i>
+               </form>
+
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="block no-margin-top">
+                       <!-- Swiper -->
+                       <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="img/propaganda4.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/propaganda2.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                             <img src="img/propaganda3.png" alt="">
+                            </div>
+                          <div class="swiper-slide">
+                            <img src="img/propaganda.png" alt="">
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="categoria-section" >
+                        <h2>Categorias</h2>
+                        <a href="#">Veja todas <i class="mdi mdi-arrow-right"></i></a>
+                    </div>
+
+
+                    <div class="swiper Categorias">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <button class="filter-btn active">
+                                Todas
+                            </button>
+                          </div>
+                          <div class="swiper-slide"><button class="filter-btn">
+                            Celulares
+                        </button></div>
+                          <div class="swiper-slide"> <div class="swiper-slide"><button class="filter-btn">
+                            Laptops
+                        </button></div></div>
+                          <div class="swiper-slide"> <div class="swiper-slide"><button class="filter-btn">
+                            Computadores
+                        </button></div></div>
+                          <div class="swiper-slide"><div class="swiper-slide"> <div class="swiper-slide"><button class="filter-btn">
+                            Tablets
+                        </button></div></div></div>
+                          <div class="swiper-slide"><div class="swiper-slide"> <div class="swiper-slide"><button class="filter-btn">
+                            Videogames
+                        </button></div></div></div>
+                          <div class="swiper-slide"><div class="swiper-slide"> <div class="swiper-slide"><button class="filter-btn">
+                            Smartwatches
+                        </button></div></div></div>
+                          <div class="swiper-slide"><div class="swiper-slide"> <div class="swiper-slide"><button class="filter-btn">
+                            Fones de ouvido
+                        </button></div></div></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+
+               <div id="produtos" class="margin-top row display-flex align-items-center justify-content-start" > 
+                        
+                      <!-- item skeleton-->
+                    <div class="item-card">
+                        <a href="/detalhes/" class="item">
+                            <div class="img-container skeleton-effect-wave">
+                               
+                            </div>
+                           
+                                <span style="height:5px ; margin-top: 5px; width: 90px;" 
+                                class="gelo skeleton-block skeleton-effect-wave  bold colo-name"></span>
+                                <span style="width: 90px;" 
+                                class="gelo skeleton-block skeleton-effect-wave  bold colo-name"></span>
+                                
+                           
+                            <div style="height:30px; margin-top: 7px;  width: 120px;"  class=" gelo skeleton-block skeleton-effect-wave bold price"></div>
+                        </a>  
+                    </div>
+                    <div class="item-card">
+                        <a href="/detalhes/" class="item">
+                            <div class="img-container skeleton-effect-wave">
+                               
+                            </div>
+                           
+                                <span style="height:5px ; margin-top: 5px; width: 90px;" 
+                                class="gelo skeleton-block skeleton-effect-wave  bold colo-name"></span>
+                                <span style="width: 90px;" 
+                                class="gelo skeleton-block skeleton-effect-wave  bold colo-name"></span>
+                                
+                           
+                            <div style="height:30px; margin-top: 7px;  width: 120px;"  class=" gelo skeleton-block skeleton-effect-wave bold price"></div>
+                        </a>  
+                    </div>
+                    <div class="item-card">
+                        <a href="/detalhes/" class="item">
+                            <div class="img-container skeleton-effect-wave">
+                               
+                            </div>
+                           
+                                <span style="height:5px ; margin-top: 5px; width: 90px;" 
+                                class="gelo skeleton-block skeleton-effect-wave  bold colo-name"></span>
+                                <span style="width: 90px;" 
+                                class="gelo skeleton-block skeleton-effect-wave  bold colo-name"></span>
+                                
+                           
+                            <div style="height:30px; margin-top: 7px;  width: 120px;"  class=" gelo skeleton-block skeleton-effect-wave bold price"></div>
+                        </a>  
+                    </div>
+                    <div class="item-card">
+                        <a href="/detalhes/" class="item">
+                            <div class="img-container skeleton-effect-wave">
+                               
+                            </div>
+                           
+                                <span style="height:5px ; margin-top: 5px; width: 90px;" 
+                                class="gelo skeleton-block skeleton-effect-wave  bold colo-name"></span>
+                                <span style="width: 90px;" 
+                                class="gelo skeleton-block skeleton-effect-wave  bold colo-name"></span>
+                                
+                           
+                            <div style="height:30px; margin-top: 7px;  width: 120px;"  class=" gelo skeleton-block skeleton-effect-wave bold price"></div>
+                        </a>  
+                    </div>
+
+                </div>
+                      <br><br><br><br><br><br><br>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/produtos.js"></script>
+    <script src="js/index.js"></script>
+    
+</body>
+
+</html>
